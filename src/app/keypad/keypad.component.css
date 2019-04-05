@@ -1,0 +1,51 @@
+.keypad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.keypad span {
+    border: 2px solid #000; 
+    font-weight: bold;
+    color:#000;
+    background-color: #FFF176;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.keypad span.disabled {
+    border: 1px solid #9E9E9E; 
+    color: #9E9E9E;
+    background: #FFF176;
+    cursor: default;
+}
+
+.keypad.disabled span {
+    border: 1px solid #9E9E9E; 
+    color: #9E9E9E;
+    background: #FFF176;
+    cursor: default;
+}
+
+@media (max-width: 640px) {
+    /* .keypad { position: absolute; left:0; right:0; bottom: 0; } */
+    .keypad span { padding: 8px 15px; margin: 0 5px 5px 0; font-size: 18px; font-size: 1.8rem; }
+}
+
+@media (min-width: 640px) {
+    /* .keypad { position: absolute; left:0; right:0; bottom: 0; } */
+    .keypad span { font-size: 1.8rem; padding: 8px 15px; margin: 5px; }
+}
+
+@media (min-width: 960px) {
+    .keypad span { font-size: 1.8rem; padding: 8px 15px; margin: 0 10px 10px 10px; }
+}
+

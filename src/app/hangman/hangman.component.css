@@ -1,0 +1,29 @@
+#hangman {
+    /* margin-left: -25px; */
+    /* border: 1px solid black;   */
+}
+
+svg {
+    /* border: 1px solid red; */
+}
+
+svg line {
+    stroke: #FFF176;
+    stroke-width: 12;
+    stroke-linecap: round;
+}
+
+.tb1{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear forwards; 
+    stroke-linecap:round;
+ }
+ 
+ .show {
+     visibility: visible;
+ }
+
+@keyframes dash {
+    to { stroke-dashoffset: 0; }
+}

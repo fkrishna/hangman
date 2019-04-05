@@ -1,0 +1,3 @@
+<div class="keypad" [class.disabled]="disabled">
+  <span *ngFor="let key of keys" (click)="process(key)" [class.disabled]="key.disabled">{{ key.code }}</span>
+</div>

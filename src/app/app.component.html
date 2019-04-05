@@ -1,0 +1,22 @@
+<div class="container">
+  <!-- <div class="svg">
+    <hangman></hangman>
+  </div> -->
+
+  <div class="user-control">
+    <div class="view">
+      <p>{{ this.getSecretWord() }}</p>
+      <p>{{life}}</p>
+    </div>
+
+    <div class="keypad">
+      <keypad (keyPressed)="onKeyPressed($event)"></keypad>
+    </div>
+
+    <div class="notification">
+      <p *ngIf="notification">{{ notification }}</p>
+    </div>
+
+    <button (click)="nextWord()" *ngIf="showNextBtn">Next Word</button>
+  </div>
+</div>
